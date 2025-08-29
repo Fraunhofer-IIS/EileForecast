@@ -1,0 +1,3 @@
+name: TimesFM
+_target_: eile_forecast.models.timesfm.TimesFM
+train_len: ${..params.train_len}

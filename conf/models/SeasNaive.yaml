@@ -1,0 +1,3 @@
+_target_: eile_forecast.models.seas_naive_predictor.SeasNaive
+name: SeasNaive${.seas}
+seas: 168

@@ -1,0 +1,5 @@
+name: SeasAgg
+_target_: eile_forecast.models.seas_agg_predictor.SeasAgg
+seas: 168
+num_seas: 4
+train_len: ${..params.train_len}

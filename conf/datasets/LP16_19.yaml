@@ -1,0 +1,10 @@
+_target_: eile_forecast.forecast.split_data.GluontsDatasetEile
+add_holidays_and_weekends: true
+add_seasonalities: true
+add_weather: false
+benchmark_end_date: 2016-12-31 23:00
+benchmark_start_date: 2015-12-31 23:15
+country: Germany
+forecast_signal: load
+main_signal_name: load
+name: LP16_19

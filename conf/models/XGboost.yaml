@@ -1,0 +1,14 @@
+_target_: eile_forecast.models.xgboost.XGboost
+colsample_bytree: 0.6365146707144534
+early_stopping_rounds: 10
+gamma: 6.386272751808297
+hyperparameter_tuning: false
+learning_rate: 0.48503098352540247
+max_depth: 22
+min_child_weight: 5.734378881232861
+n_estimators: 466
+name: XGboost
+past_horizon: 24
+path_to_configs: /home/dev/projects/paper/conf/
+reg_alpha: 8.328441119525964
+reg_lambda: 9.170414725848108

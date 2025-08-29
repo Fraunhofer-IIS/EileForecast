@@ -1,0 +1,3 @@
+_target_: eile_forecast.models.linear_regression.LinearRegression
+name: LinearRegression
+past_horizon: 24

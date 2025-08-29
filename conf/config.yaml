@@ -1,0 +1,19 @@
+defaults:
+- _self_
+- models: AutoArima
+- datasets: example
+hydra:
+  job:
+    chdir: true
+  run:
+    dir: ${params.output_path}/${params.mode}/${datasets.name}/train_${params.train_len}/${models.name}
+params:
+  data_path: /home/dev/projects/data
+  forecast_horizon: 24
+  forecast_step: 24
+  mode: benchmark
+  output_path: ${params.data_path}/outputs/
+  processed_path: ${params.data_path}/processed/${datasets.name}/
+  raw_path: ${params.data_path}/raw/${datasets.name}/
+  save_forecast: true
+  train_len: 27916

@@ -1,0 +1,9 @@
+_target_: eile_forecast.forecast.split_data.GluontsDatasetEile
+add_holidays_and_weekends: false
+add_seasonalities: true
+add_weather: true
+benchmark_end_date: 2017-06-23 23:00
+benchmark_start_date: 2013-07-01 00:00
+forecast_signal: load
+main_signal_name: load
+name: example

@@ -1,0 +1,5 @@
+_target_: eile_forecast.models.lstm.LSTM
+early_stopping_patience: 10
+max_epochs: 1000
+name: LSTM
+past_horizon: 24

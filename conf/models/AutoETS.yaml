@@ -1,0 +1,4 @@
+name: AutoETS
+_target_: eile_forecast.models.auto_ets.AutoETS
+season_len: 24
+train_len: ${..params.train_len}
