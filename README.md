@@ -15,6 +15,7 @@ If you want to run the foundation model TimesFM, additionally install "poetry ad
 For the paper benchmark you need around 150GB RAM and for the example benchmark around 20GB.
 
 Further, you need a /data folder at the same level as the /paper_benchmark folder. You need the following /data structure:
+
 ├── data
 │   ├── raw
 │   ├── processed
