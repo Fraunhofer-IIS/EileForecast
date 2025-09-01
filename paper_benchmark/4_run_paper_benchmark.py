@@ -30,18 +30,17 @@ def run(cfg):
         "AutoETS",
         "LSTM",
     ]:
-        seas_values = [168] if model == "SeasNaive" else [""]  # 24,
+        seas_values = [24, 168] if model == "SeasNaive" else [""] 
         for seas in seas_values:
-            for dataset in (
-                ["LP16_1"]
-                #     "Cosmic1",
-                #     "Cosmic2",
-                #     "Cosmic3",
-                # ]
-                # + [f"LP16_{x}" for x in range(1, 21)]
-                # + [f"LP17_{x}" for x in range(1, 31)]
+            for dataset in ([
+                    "Cosmic1",
+                    "Cosmic2",
+                    "Cosmic3",
+                ]
+                + [f"LP16_{x}" for x in range(1, 21)]
+                + [f"LP17_{x}" for x in range(1, 31)]
             ):
-                for train_len in [168]:  # , 336, 720, 2160, 4320, 6480
+                for train_len in [168, 336, 720, 2160, 4320, 6480]:   
                     logger.info(
                         f"Forecasting load of dataset {dataset} with model {model}, seasonality {seas}, and train length {train_len}."
                     )
