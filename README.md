@@ -16,12 +16,13 @@ For the paper benchmark you need around 150GB RAM and for the example benchmark 
 
 Further, you need a /data folder at the same level as the /paper_benchmark folder. You need the following /data structure:
 
+```
 data/
 ├── raw/
 ├── processed/
 └── outputs/
     └── benchmark/
-
+```
 
 
 
